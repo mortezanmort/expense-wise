@@ -1,6 +1,4 @@
-Certainly, here's the content in pure Markdown format for easy copy-pasting:
 
-```markdown
 # Expensewise - Expense Management Application
 
 Expensewise is an application that simplifies expense tracking and distribution among friends or groups. It allows users to create groups, record expenses, and efficiently distribute costs among group members.
@@ -141,4 +139,4 @@ To use Expensewise, follow these steps:
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
-```
+
