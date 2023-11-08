@@ -1,0 +1,44 @@
+{
+  "env": {
+    "browser": true,
+    "commonjs": true,
+    "es2021": true
+  },
+  "extends": ["prettier", "airbnb-base", "plugin:node/recommended"],
+  "plugins": ["prettier"],
+  "overrides": [
+    {
+      "files": ["**/*.test.js", "**/*.factory.js"],
+      "rules": {
+        "max-len": "off" // disable max line length for specs
+      }
+    }
+  ],
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "rules": {
+    "quotes": ["warn", "double"],
+    "no-unused-vars": "warn",
+    "func-names": "off", // to avoid unnamed annoymus function warning
+    "implicit-arrow-linebreak": "off", // to allow one line function
+    "operator-linebreak": "off", // to allow line break after operators like '='
+    "no-underscore-dangle": "off", // for mongoose to allow _id
+    "object-curly-newline": "off", // to avoid line break during destructuring the object
+    "consistent-return": "off", // to avoid expected to return a value at the end of async arrow function error
+    "node/no-unsupported-features/es-syntax": "off", // to allow ES6 syntax
+    "max-len": ["warn", 80], // set line length to 80
+    "function-paren-newline": "off", // to allow line break before ');' at the end of function
+    "import/order": "off", // to allow sort order of imports
+    "sort-imports": [
+      "error",
+      {
+        "ignoreCase": true, // to ignore the check of case i.e Lowercase, Uppercase
+        "allowSeparatedGroups": true // to allow multiple import groups
+      }
+    ], // to set order of imports
+    "node/no-unpublished-import": "off", // to disable unpublished imports issue
+    "import/no-extraneous-dependencies": "off" // to enable adding libraries to dev
+  }
+}
